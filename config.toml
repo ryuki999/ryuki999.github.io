@@ -1,0 +1,4 @@
+baseURL = "http://example.org"
+languageCode = "ja"
+title = "Hugoサンプル"
+theme = "hugo-theme-learn"
