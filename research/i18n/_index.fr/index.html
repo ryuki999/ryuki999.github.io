@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Ryuki Furukawaの自己紹介ページ :: Hugoサンプル</title>
+    <title>Multi-langue et i18n :: Hugoサンプル</title>
 
     
     <link href="/css/nucleus.css?1634057057" rel="stylesheet">
@@ -43,7 +43,7 @@
 </style>
 
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/research/i18n/_index.fr/">
     <nav id="sidebar" class="">
 
 
@@ -157,7 +157,7 @@
   
     
     <li data-nav-id="/research/" title="研究内容" class="dd-item
-        
+        parent
         
         
         ">
@@ -185,7 +185,7 @@
  
   
     
-      <li data-nav-id="/research/i18n/_index.fr/" title="Multi-langue et i18n" class="dd-item ">
+      <li data-nav-id="/research/i18n/_index.fr/" title="Multi-langue et i18n" class="dd-item active">
         <a href="/research/i18n/_index.fr/">
         Multi-langue et i18n
         
@@ -342,50 +342,141 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Ryuki Furukawaの自己紹介ページ</a> > <a href='/research/'>研究内容</a> > Multi-langue et i18n
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#configuration-simple">Configuration simple</a></li>
+    <li><a href="#surcharger-les-translation-strings">Surcharger les <em>translation strings</em></a></li>
+    <li><a href="#désactiver-le-changement-de-langue">Désactiver le changement de langue</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Multi-langue et i18n
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="ryuki-furukawaの自己紹介ページ">Ryuki Furukawaの自己紹介ページ</h1>
-<p><a href="http://github.com/matcornic/hugo-theme-learn">Hugo-theme-learn</a> is a theme for <a href="https://gohugo.io/">Hugo</a>, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this multilingual-ready theme is <strong>fully designed for documentation</strong>.</p>
-<p>This theme is a partial porting of the <a href="http://learn.getgrav.org/">Learn theme</a> of <a href="https://getgrav.org/">Grav</a>, a modern flat-file CMS written in PHP.</p>
-
-<div class="notices tip" ><p>Learn theme works with a <em>page tree structure</em> to organize content : All contents are pages, which belong to other pages. <a href="">read more about this</a>  &ndash;&gt;</p>
-</div>
-
-<h2 id="main-features">Main features</h2>
+<p><strong>Learn</strong> est complètement compatible avec le mode multi-langue d&rsquo;Hugo.</p>
+<p>Il fournit :</p>
 <ul>
-<li><a href="">Automatic Search</a></li>
-<li><a href="/research/i18n/">Multilingual mode</a></li>
-<li><strong>Unlimited menu levels</strong></li>
-<li><strong>Automatic next/prev buttons to navigate through menu entries</strong></li>
-<li><a href="">Customizable look and feel and themes variants</a>
-<img src="https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&amp;classes=shadow" alt="Screenshot"></li>
+<li>Des <em>translation strings</em> pour les valeurs par défaut utilisées par le thème (Anglais et Français). N&rsquo;hésitez pas à contribuer !</li>
+<li>Génération automatique du menu avec le contenu multi-langue</li>
+<li>Modification de la langue dans le navigateur</li>
 </ul>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
+<p><img src="/en/cont/i18n/images/i18n-menu.gif" alt="I18n menu"></p>
+<h2 id="configuration-simple">Configuration simple</h2>
+<p>Après avoir appris <a href="https://gohugo.io/content-management/multilingual">comment Hugo gère les sites multi-langue</a>, définissez vos langues dans votre fichier <code>config.toml</code>.</p>
+<p>Par exemple, pour ce site, avec du contenu en français et en anglais.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># Anglais est la langue par défaut</span>
+<span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+<span style="color:#75715e"># Force d&#39;avoir /en/ma-page et /fr/ma-page routes, même avec la langue par défaut.</span>
+<span style="color:#a6e22e">defaultContentLanguageInSubdir</span>= <span style="color:#66d9ef">true</span>
 
-<div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
+[<span style="color:#a6e22e">Languages</span>]
+[<span style="color:#a6e22e">Languages</span>.<span style="color:#a6e22e">en</span>]
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Documentation for Hugo Learn Theme&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+<span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;English&#34;</span>
+
+[<span style="color:#a6e22e">Languages</span>.<span style="color:#a6e22e">fr</span>]
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Documentation du thème Hugo Learn&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+<span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;Français&#34;</span>
+</code></pre></div><p>Puis, pour chaque nouvelle page, ajoutez <em>l&rsquo;id</em> de la langue du fichier.</p>
+<ul>
+<li>Le fichier <code>my-page.md</code> est découpé en deux fichiers :
+<ul>
+<li>en anglais : <code>my-page.en.md</code></li>
+<li>en français : <code>my-page.fr.md</code></li>
+</ul>
+</li>
+<li>Le fichier <code>_index.md</code> est découpé en deux fichiers :
+<ul>
+<li>en anglais: <code>_index.en.md</code></li>
+<li>en français: <code>_index.fr.md</code></li>
+</ul>
+</li>
+</ul>
+
+<div class="notices info" ><p>Attention, seulement les pages traduites sont affichées dans le menu. Le contenu n&rsquo;est pas remplacé par les pages de la langue par défaut.</p>
 </div>
 
-<h2 id="documentation-website">Documentation website</h2>
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo -t hugo-theme-learn</code> &ndash; source code is <a href="https://github.com/matcornic/hugo-theme-learn">available here at GitHub</a></p>
 
-<div class="notices note" ><p>Automatically published and hosted thanks to <a href="https://www.netlify.com/">Netlify</a>. Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a></p>
+<div class="notices tip" ><p>Utilisez le paramètre du Front Matter <a href="https://gohugo.io/content-management/multilingual/#translate-your-content">slug</a> pour traduire également les URLs.</p>
 </div>
 
+<h2 id="surcharger-les-translation-strings">Surcharger les <em>translation strings</em></h2>
+<p>Les <em>Translations strings</em> sont utilisées comme valeurs par défaut dans le thème (Bouton <em>Modifier la page</em>, Element de subsitution <em>Recherche</em>, etc.). Les traductions sont disponibles en français et en anglais mais vous pouvez utiliser n&rsquo;importe quelle autre langue et surcharger avec vos propres valeurs.</p>
+<p>Pour surcharger ces valeurs, créer un nouveau fichier dans votre dossier i18n local <code>i18n/&lt;idlanguage&gt;.toml</code> et inspirez vous du thème <code>themes/hugo-theme-learn/i18n/en.toml</code></p>
+<p>D&rsquo;ailleurs, ces traductions pour servir à tout le monde, donc svp prenez le temps de <a href="https://github.com/matcornic/hugo-theme-learn/pulls">proposer une Pull Request</a> !</p>
+<h2 id="désactiver-le-changement-de-langue">Désactiver le changement de langue</h2>
+<p>Vous pouvez changer de langue directement dans le navigateur. C&rsquo;est une super fonctionnalité, mais vous avez peut-être besoin de la désactiver.</p>
+<p>Pour ce faire, ajouter le paramètre <code>disableLanguageSwitchingButton=true</code> dans votre <code>config.toml</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
+  <span style="color:#75715e"># Quand vous utilisez un site en multi-langue, désactive le bouton de changment de langue.</span>
+  <span style="color:#a6e22e">disableLanguageSwitchingButton</span> = <span style="color:#66d9ef">true</span>
+</code></pre></div><p><img src="/en/cont/i18n/images/i18n-menu.gif" alt="I18n menu"></p>
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -436,6 +527,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -450,6 +542,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -469,6 +562,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -538,8 +634,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/research/" title="研究内容"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/self-introduction/" title="自己紹介" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/feature/" title="今後やりたいこと" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
