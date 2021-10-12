@@ -8,29 +8,6 @@
     <language>ja</language>
     <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate><atom:link href="https://ryuki999.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Multi-langue et i18n</title>
-      <link>https://ryuki999.github.io/research/i18n/_index.fr/</link>
-      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
-      
-      <guid>https://ryuki999.github.io/research/i18n/_index.fr/</guid>
-      <description>Learn est complètement compatible avec le mode multi-langue d&amp;rsquo;Hugo.
-Il fournit :
- Des translation strings pour les valeurs par défaut utilisées par le thème (Anglais et Français). N&amp;rsquo;hésitez pas à contribuer ! Génération automatique du menu avec le contenu multi-langue Modification de la langue dans le navigateur  Configuration simple Après avoir appris comment Hugo gère les sites multi-langue, définissez vos langues dans votre fichier config.toml.
-Par exemple, pour ce site, avec du contenu en français et en anglais.</description>
-    </item>
-    
-    <item>
-      <title>Attachments</title>
-      <link>https://ryuki999.github.io/personal-history/attachments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryuki999.github.io/personal-history/attachments/</guid>
-      <description>The Attachments shortcode displays a list of files attached to a page.
-  Attachments   BachGavotteShort.mp3  (357 kb)   Carroll_AliceAuPaysDesMerveilles.pdf  (175 kb)   adivorciarsetoca00cape.pdf  (361 kb)   hugo.png  (17 kb)   movieselectricsheep-flock-244-32500-2.mp4  (340 kb)    Usage The shortcurt lists files found in a specific folder. Currently, it support two implementations for pages
-  If your page is a markdown file, attachements must be placed in a folder named like your page and ending with .</description>
-    </item>
-    
-    <item>
       <title>Credits</title>
       <link>https://ryuki999.github.io/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
