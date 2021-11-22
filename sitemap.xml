@@ -2,18 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ryuki999.github.io/self-introduction/</loc>
+    <loc>https://ryuki999.github.io/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
     <loc>https://ryuki999.github.io/research/</loc>
   </url><url>
-    <loc>https://ryuki999.github.io/feature/</loc>
-  </url><url>
     <loc>https://ryuki999.github.io/skills/</loc>
   </url><url>
-    <loc>https://ryuki999.github.io/personal-history/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <loc>https://ryuki999.github.io/feature/</loc>
   </url><url>
-    <loc>https://ryuki999.github.io/</loc>
+    <loc>https://ryuki999.github.io/personal-history/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
     <loc>https://ryuki999.github.io/categories/</loc>
